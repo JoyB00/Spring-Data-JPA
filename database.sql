@@ -10,6 +10,13 @@ CREATE TABLE categories
 
 SELECT * FROM categories
 
+Alter table categories
+ADD COLUMN created_date TIMESTAMP
+
+Alter table categories
+ADD COLUMN last_modified_date TIMESTAMP
+
+
 CREATE TABLE products
 (
     id          BIGINT NOT NULL PRIMARY KEY AUTO_INCREMENT,
